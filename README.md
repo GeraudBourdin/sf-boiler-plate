@@ -1,4 +1,8 @@
 - create-project symfony/skeleton composer --no-progress --no-interaction --ansi --remove-vcs
 - docker compose with php 8.4 and nginx
-- sass bundle
+- sass-bundle
 - sass:build --watch in the compose file
+- bootstrap 5.3.3
+- lato-font
+- jquery
+- font awesome

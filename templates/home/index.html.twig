@@ -3,18 +3,60 @@
 {% block title %}Hello IndexController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <style>
+        .example-wrapper {
+            margin: 1em auto;
+            max-width: 800px;
+            width: 95%;
+            font: 18px/1.5 sans-serif;
+        }
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/var/www/src/Controller/IndexController.php</code></li>
-        <li>Your template at <code>/var/www/templates/index/index.html.twig</code></li>
-    </ul>
-</div>
+        .example-wrapper code {
+            background: #F5F5F5;
+            padding: 2px 6px;
+        }
+    </style>
+    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Test Bootstrap</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Si vous voyez ceci, Bootstrap JS fonctionne !
+        </div>
+    </div>
+
+
+    <!-- Bouton pour ouvrir le modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testModal">
+        Ouvrir le Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Test Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Si vous voyez ce message, Bootstrap JS fonctionne !
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="example-wrapper">
+        <h1>Hello {{ controller_name }}! ✅</h1>
+
+        This friendly message is coming from:
+        <ul>
+            <li>Your controller at <code>/var/www/src/Controller/IndexController.php</code></li>
+            <li>Your template at <code>/var/www/templates/index/index.html.twig</code></li>
+        </ul>
+    </div>
 {% endblock %}
