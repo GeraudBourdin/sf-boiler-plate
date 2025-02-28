@@ -6,3 +6,4 @@
 - lato-font
 - jquery
 - font awesome
+- bootstrap-icons
